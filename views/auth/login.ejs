@@ -1,17 +1,66 @@
-<div class="reg-container">
-    <div class="reg-form-container">
-        <form action="/auth/login" method="post">
-            <h1>Login</h1>
-            <div class="field">
-                <label for="email">Email ID</label>
-                <input type="text" name="email" id="email" placeholder="Email">
-            </div>
-            <div class="field">
-                <label for="password">Password ID</label>
-                <input type="password" name="password" id="password" placeholder="Password">
-            </div>
-            <button type="submit" class="reg-submit">Submit</button>
-        </form>
-    </div>  
-    <img src="/login.svg" alt="" style="width: 30vw;">
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Aleo:wght@700&family=Outfit:wght@200;400;500;600;700;800;900&family=Overpass:wght@200;300;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Sacramento&display=swap');
+    body{
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        background-color: #141414;
+        font-family: 'Outfit' !important;
+    }
+    h1{
+    font-size: 4rem;
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    label{
+        margin-right: 20px;
+    }
+    input{
+        border-radius: 12px;
+        padding: 10px;
+        margin-bottom: 6px;
+        margin-top: 6px;
+        background-color: #000;
+        border: none;
+    }
+    button{
+        margin-top: 30px;
+        background-color: #000;
+        border: none;
+        color: #fff;
+        font-size: 1.5rem;
+        padding: 20px;
+        border-radius: 12px;
+    }
+</style>
+<body>
+    <div class="reg-container">
+        <div class="reg-form-container">
+            <form action="/auth/login" method="post">
+                <h1>Login</h1>
+                <div class="field">
+                    <label for="email">Email ID</label>
+                    <input type="text" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="field">
+                    <label for="password">Password ID</label>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                </div>
+                <button type="submit" class="reg-submit">Submit</button>
+            </form>
+        </div>  
+        <img src="/login.svg" alt="" style="width: 30vw;">
+    </div>
+    
+</body>
+</html>

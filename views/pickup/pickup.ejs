@@ -97,7 +97,34 @@ a{
   color: #fff
 }
 
-
+.pickups{
+  margin-left: 10%;
+  margin-right: 3%;
+}
+p{
+  color: #fff;
+}
+h2{
+  color:#fff;
+  font-size: 2rem;
+}
+.pickup{
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  width: 100%;
+  height: auto;
+  background-color: #141414;
+  margin-bottom: 40px;
+  border-radius: 12px;
+}
+.color{
+  align-items: center;
+  text-align: center;
+  margin-left: 48.5%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 </style>
 <body>
     <div class="pickup-main">
@@ -105,6 +132,16 @@ a{
         <button class="btn" role="button"> <a href="/pickup/form"> Request Pickup</a></button>
     </div>
     <h2 class="liner">Previous Pickups</h2>
+    <div class="pickups">
+      <% for (let i = 0; i < user.recent.length; i++) {%>
+        <div class="pickup">
+          <h2>Fabric: </h2> <p><%= user.recent[i].fabric%></p>
+          <div class="color" style="height: 30px; width: 30px; border-radius:50%; background-color:<%=user.recent[i].colour%>"></div>
+          <h2>Date: </h2> <p><%= user.recent[i].date%></p>
+        </div>
+      <% }%>
+      
+    </div>
 </body>
 <%- include('../partials/footer') %>
 </html>

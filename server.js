@@ -16,6 +16,7 @@ var server = require('http').createServer(app);
 const landing = require('./routes/landing')
 const auth = require('./routes/auth')
 const dashboard = require('./routes/dashboard')
+const nearby = require('./routes/nearby')
 const pickup = require('./routes/pickup')
 const recycle = require('./routes/recycle')
 
@@ -78,6 +79,7 @@ app.use('/dashboard', dashboard)
 app.use('/auth', auth)
 app.use('/pickup', pickup)
 app.use('/recycle', recycle)
+app.use('/nearby', nearby)
 
 
 
