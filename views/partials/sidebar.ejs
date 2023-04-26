@@ -225,6 +225,10 @@
   width: 50px;
   background: none;
 }
+#log_out:hover{
+  text-decoration: none;
+  color: gray;
+}
 .home-section{
   position: relative;
   background: #E4E9F7;
@@ -311,7 +315,7 @@
              <div class="job"><%=user.location%></div>
            </div>
          </div>
-         <i class='bx bx-log-out' id="log_out" ></i>
+         <a href="/auth/logout"><i class='bx bx-log-out' id="log_out" ></i></a>
      </li>
     </ul>
   </div>

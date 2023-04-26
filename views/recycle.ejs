@@ -12,28 +12,47 @@ body{
 }
 h1 {
     position: absolute;
-    left: 30%;
-    top: 20%;
+    left: 25%;
+    top: 35%;
     font-size: 3rem;
     color: #fff;
     opacity: 90%;
 }
-h1 span{
+.l{
+    position: absolute;
+    left: 25%;
+    top: 33%;
     background: rgb(238,174,202);
-    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);    -webkit-background-clip: text;
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);    
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 6rem;
-    letter-spacing: 1.5rem;
+    font-size: 8rem;
+    margin-top:0;
+    letter-spacing: 0.5rem;
+}
+
+.small{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 25%;
+    top: 15%;
+}
+
+.big{
+    position: absolute;
+    left: 60%;
+    width: 40%;
 }
 
 </style>
 <body>
 <%- include('partials/sidebar') %>
-<img src="images/recycle.png" alt="">
-<h1>Recycling Process
-<br><br>
-<span>. . .</span>
-</h1>
+<img class="small" src="images/recycle.png" alt="">
+<h1>Recycling Process</h1>
+<p class="l">...</p>
 <%- include('partials/footer') %>
+<img class="big" src="images/recycle2.png" alt="">
+<p><span>Step 1</span><br>Lorem Ipsum</p>
 </body>
 </html>
