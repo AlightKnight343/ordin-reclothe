@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pickup</title>
+</head>
+<%- include('../partials/sidebar') %>
+<style>
+body{
+    background-color: #000;
+    color: #D9ffffff;
+}
+h1{
+    position:absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -20%);
+    font-size:5rem;
+    font-weight: 600;
+}
+.btn {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #698EFF;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  margin-top: 20%;
+}
+
+.btn:disabled {
+  pointer-events: none;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #698EFF;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.pickup-main{
+    align-items: center;
+    text-align: center;
+}
+
+.liner {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+.liner:after {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background: #698EFF;
+    min-width: 20px;
+    margin: auto;
+  }
+
+.liner:after {
+    margin-left: 20px;
+  }
+
+a{
+  text-decoration: none;
+  color: #fff
+}
+
+
+</style>
+<body>
+    <div class="pickup-main">
+        <h1>Pickup clothes</h1>
+        <button class="btn" role="button"> <a href="/pickup/form"> Request Pickup</a></button>
+    </div>
+    <h2 class="liner">Previous Pickups</h2>
+</body>
+<%- include('../partials/footer') %>
+</html>
+
+<!-- add existing pickups here -->

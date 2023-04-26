@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+
+<style>
+    /* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@700&family=Outfit:wght@200;400;500;600;700;800;900&family=Overpass:wght@200;300;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Sacramento&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit" , sans-serif;
+}
+.home-section .text{
+  display: inline-block;
+  color: #000000;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 18px;
+}
+@media (max-width: 420px) {
+  .sidebar li .tooltip{
+    display: none;
+  }
+}
+
+
+.pickup-container{
+    height: 100vh;
+    width: 100%;
+    background-color: #1E1E1E;
+  }
+
+.pickup-container .text{
+  left: 20%;
+  top: 22%;
+  position: absolute;
+  text-align: center;
+  z-index: 1000;
+  color: #fff;
+  transform: translate(-20%, -22%);
+}
+.pickup-container .text h1{
+  color: #fff;
+  font-size: 4.5rem;
+  font-weight: 400;
+}
+.dashboard-img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 95%;
+  height: 95%;
+  transform: translate(-50%, -50%);
+}
+
+.calendar{
+  position: absolute;
+  height: 23%;
+  width: 23%;
+  left: 25%;
+  top: 50%;
+  transform: translate(-25%, -50%);
+}
+
+.date, .month{
+  position: absolute;
+  font-size: 5rem;
+  color: #fff;
+  font-weight: 600;
+  top: 50%;
+}
+
+.date{
+  left: 22.5%;
+  transform: translate(-22.5%, -50%);
+}
+
+.month{
+  left: 36.5%;
+  transform: translate(-36.5%, -50%);
+}
+
+</style>
+<%- include('partials/sidebar') %>
+
+  <section class="home-section">  
+    <div class="pickup-container">
+      <div class="pickup-inner">
+        <img class="dashboard-img" src="images/dashboard.png" alt="">
+        <div class="text">
+          <h1>Pickup Schedule</h1>
+        </div>
+        <img class="calendar" src="images/calendar.png" alt="">
+        <p class="date">24</p>
+        <p class="month">04</p>
+      </div>
+    </div>
+  </section>
+
+  <%- include('partials/footer') %>
