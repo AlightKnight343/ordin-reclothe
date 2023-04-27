@@ -22,7 +22,7 @@ const recentSchema = new mongoose.Schema({
 })
 
 const userSchema = new mongoose.Schema({
-    username_1: {
+    username: {
         type: String,
         default: uuid()
     },
